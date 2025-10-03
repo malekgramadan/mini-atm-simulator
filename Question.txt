@@ -14,7 +14,7 @@ If deposit → ask how much, add to balance, and show new balance.
 If withdraw → ask how much, subtract if enough money, otherwise show error.
 If exit → stop the program.
 Keep showing the menu until the user chooses Exit.
--------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 Below is an output example:
 ``````````````````````````````````````````````````````````
 Welcome to the ATM
