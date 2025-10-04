@@ -20,7 +20,9 @@ while True:
         print("Deposit successful. New balance = ", balance)
 
     elif action == 3:
-        print("Option 3")
+        withdraw = int(input("Enter amount to withdraw: "))
+        balance = balance - withdraw
+        print("Withdrawal successful. New balance = ", balance)
 
     elif action == 4:
         print("Goodbye!")
