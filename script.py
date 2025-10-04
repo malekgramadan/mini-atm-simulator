@@ -5,7 +5,6 @@ print("Welcome to the ATM")
 print("Your balance is", balance)
 
 while True:
-    newbalance = 0
     print("1. Check Balance")
     print("2. Deposit Money")
     print("3. Withdraw Money")
@@ -13,16 +12,19 @@ while True:
     action = int(input("Choose an option: "))
 
     if action == 1:
-        print("Your balance is ", newbalance)
+        print("Your balance is ", balance)
 
     elif action == 2:
         deposit = int(input("Enter amount to deposit: "))
-        newbalance = balance + deposit
-        print("Deposit successful. New balance = ", newbalance)
+        balance = balance + deposit
+        print("Deposit successful. New balance = ", balance)
 
     elif action == 3:
         print("Option 3")
 
-    else:
+    elif action == 4:
         print("Goodbye!")
         break
+
+    else:
+        print("Invalid numbner.")
