@@ -21,8 +21,11 @@ while True:
 
     elif action == 3:
         withdraw = int(input("Enter amount to withdraw: "))
-        balance = balance - withdraw
-        print("Withdrawal successful. New balance = ", balance)
+        if balance > withdraw:
+            balance = balance - withdraw
+            print("Withdrawal successful. New balance = ", balance)
+        else:
+            print("Insufficient funds!")
 
     elif action == 4:
         print("Goodbye!")
